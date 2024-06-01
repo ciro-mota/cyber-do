@@ -1,0 +1,36 @@
+name: Nuke DigitalOcean Resources
+
+on:
+  # schedule:
+  #   - cron:  '33 3 * * *'
+  workflow_dispatch:
+    inputs:
+      input:
+        description: "Manual Execution"
+        required: true
+        default: "Manual Execution"
+
+jobs:
+  Execution:
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: ./scripts
+
+    steps:
+    - name: Setup DigitalOcean doctl
+      uses: digitalocean/action-doctl@v2
+      with:
+        token: ${{ secrets.DO_TOKEN }}
+
+    - name: Check out the repository
+      uses: actions/checkout@v4
+
+    - name: Make the script file executable
+      run: chmod +x cyber-do.sh
+    - name: Run the script
+      run: |
+        ./cyber-do.sh
+      env:
+        DO_CLI_TOKEN: ${{ secrets.DO_TOKEN }}
+        
