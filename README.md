@@ -38,7 +38,7 @@ With this script your resources will be deleted days at a time pre-scheduled by 
 ## 🚀 Installation
 
 - Create a [DigitalOcean Personal Access Token](https://docs.digitalocean.com/reference/api/create-personal-access-token/).
-- Name it "**default**" (The name must be explicitly "default" without quotes).
+- Name it.
 - Clone this repo.
 - Create a repository secret (`Settings` » `Secret and variables` » `Actions` » `New repository secret`) named `DO_TOKEN` and insert your DigitalOcean Personal Access Token.
 
