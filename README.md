@@ -64,7 +64,7 @@ You can also use a Docker container to run the script manually when you want.
 
 Need fast and affordable cloud hosting? Try @digitalocean using my affiliate link and get free credits to get started:
 
-[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=edfc9fa3f486&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=0f7a4359d994&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
 
 ## 🎁 Sponsoring
 
