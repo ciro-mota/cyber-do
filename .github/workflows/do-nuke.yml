@@ -19,7 +19,7 @@ jobs:
 
     steps:
     - name: Setup DigitalOcean doctl
-      uses: digitalocean/action-doctl@v2
+      uses: digitalocean/action-doctl@v2.5.1
       with:
         token: ${{ secrets.DO_TOKEN }}
 
