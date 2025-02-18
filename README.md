@@ -56,8 +56,18 @@ schedule:
 You can also use a Docker container to run the script manually when you want.
 
 - Clone this repo.
-- Export your token in a system variable: `export DO_CLI_TOKEN="your-personal-access-token-here"`
-- Build.
+- Export your token in a system variable: 
+
+```bash
+export DO_CLI_TOKEN="your-personal-access-token-here"`
+```
+
+- Build:
+
+```bash
+docker buildx build --build-arg DO_CLI_TOKEN=$DO_CLI_TOKEN -t docean . --no-cache
+```
+
 - Exec.
 
 ## 🤝 Referral
