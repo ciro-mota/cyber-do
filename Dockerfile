@@ -5,11 +5,12 @@ FROM cgr.dev/chainguard/wolfi-base:latest
 WORKDIR /home
 COPY ./scripts /home
 
-ENV DO_CLI_TOKEN=<your-personal-access-token-here>
+ARG DO_CLI_TOKEN
+ENV DO_CLI_TOKEN=$DO_CLI_TOKEN
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN apk update \
-	&& apk add bash=5.2.32-r2 wget=1.24.5-r4 --no-cache \
+	&& apk add bash=5.2.37-r2 wget=1.25.0-r0 --no-cache \
 	&& wget -q https://api.github.com/repos/digitalocean/doctl/releases/latest -O - \
 	| grep -E  "browser_download.*linux-amd64" \
 	| awk -F '[""]' '{print $4}' \
@@ -17,7 +18,7 @@ RUN apk update \
 	&& tar xf /tmp/doctl*.tar.gz -C /tmp \
 	&& mv /tmp/doctl /usr/bin \
 	&& chmod +x /home/cyber-do.sh \
-	&& doctl auth init --access-token ${DO_CLI_TOKEN} \
+	&& doctl auth init --access-token "${DO_CLI_TOKEN}"
 
 ENTRYPOINT ["/bin/bash"]
 CMD ["bash", "./cyber-do.sh"]
