@@ -59,16 +59,20 @@ You can also use a Docker container to run the script manually when you want.
 - Export your token in a system variable: 
 
 ```bash
-export DO_CLI_TOKEN="your-personal-access-token-here"`
+export DIGITALOCEAN_ACCESS_TOKEN="your-personal-access-token-here"`
 ```
 
 - Build:
 
 ```bash
-docker buildx build --build-arg DO_CLI_TOKEN=$DO_CLI_TOKEN -t docean . --no-cache
+docker buildx build -t docean . --no-cache
 ```
 
-- Exec.
+- Exec:
+
+```bash
+docker run -it -e DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN docean
+```
 
 ## 🤝 Referral
 
