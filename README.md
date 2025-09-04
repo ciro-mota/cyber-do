@@ -71,7 +71,7 @@ docker buildx build -t docean . --no-cache
 - Exec:
 
 ```bash
-docker run -it -e DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN docean
+docker container run -it -e DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN docean
 ```
 
 ## 🤝 Referral
