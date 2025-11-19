@@ -79,9 +79,3 @@ docker container run -it -e DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN
 Need fast and affordable cloud hosting? Try @digitalocean using my affiliate link and get free credits to get started:
 
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=59a80b08da11&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
-
-## 🎁 Sponsoring
-
-If you like this work, give me it a star on GitHub, and consider supporting it buying me a coffee:
-
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=VUS6R8TX53NTS&no_recurring=0&currency_code=USD)
